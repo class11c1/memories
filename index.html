@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090d18">
+<title>Kho  kỉ  niệm  11C1</title>
+<link rel="stylesheet" href="style.css">
+  <meta name="description" content="Kho kỉ niệm 11C1 - nơi lưu giữ những hình ảnh, khoảnh khắc và kỉ niệm đáng nhớ của tập thể lớp 11C1.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://class11c1.github.io/memory/">
+  <meta property="og:title" content="Kho kỉ niệm 11C1">
+  <meta property="og:description" content="Nơi lưu giữ những khoảnh khắc đáng nhớ của lớp 11C1.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://class11c1.github.io/memory/">
+</head>
+<body>
+<div class="orb a"></div><div class="orb b"></div>
+<header>
+  <div class="hero">
+    <span class="badge">✦ 11C1 MEMORY ARCHIVE</span>
+    <h1>Kho kỉ niệm <em>11C1</em></h1>
+    <p>Nơi lưu giữ những khoảnh khắc, câu chuyện và kỉ niệm của lớp chúng mình.</p>
+    <div class="stats">
+      <div><b id="count">0</b><small>Kỉ niệm</small></div>
+      <div><b id="cats">0</b><small>Chủ đề</small></div>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="tools">
+    <label class="search">⌕<input id="q" placeholder="Tìm kỉ niệm, người viết..."></label>
+    <select id="filter"><option value="">Tất cả chủ đề</option></select>
+  </div>
+  <section id="loading" class="state"><div class="spin"></div><p>Đang tải kho kỉ niệm...</p></section>
+  <section id="empty" class="state hide"><div class="icon">📷</div><h2>Chưa có kỉ niệm nào</h2><p>Khi Admin thêm dữ liệu, những khoảnh khắc của 11C1 sẽ xuất hiện ở đây.</p></section>
+  <section id="grid" class="grid"></section>
+  <section id="none" class="state hide"><div class="icon">🔎</div><h2>Không tìm thấy</h2><p>Thử đổi từ khóa hoặc chủ đề nhé.</p></section>
+</main>
+<div id="modal" class="modal hide">
+  <div class="back" data-close></div>
+  <article class="modalbox">
+    <button class="close" data-close>×</button>
+    <div id="mi" class="modalimg hide"><img id="img" alt=""></div>
+    <div class="modalbody"><span id="mc" class="tag"></span><h2 id="mt"></h2><small id="mm"></small><p id="md"></p></div>
+  </article>
+</div>
+<footer>Made with ♥ by 11C1 · Kho kỉ niệm</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="app.js"></script>
+</body>
+</html>

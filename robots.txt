@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://class11c1.github.io/memory/sitemap.xml
